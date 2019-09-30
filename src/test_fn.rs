@@ -20,10 +20,29 @@ pub fn test_closure() {
     println!("v is {}", v);
 
     let mut step = 10;
+    // 使用move将step的所有权交给闭包
     let mut multiply_num = move |x: i32| -> i32 {
         step *= x;
         step
     };
     let m = multiply_num(2);
     println!("m is {:?}", m);
+    // i32类型实现了Copy trait，因此还可以使用
+    println!("step is {}", step);
+}
+
+
+// 测试高阶函数
+
+fn add_one(x: i32) -> i32 {
+    x + 1
+}
+
+fn apply<F>(f: F, y: i32) -> i32
+    where F: Fn(i32) -> i32 {
+    f(y) * y
+}
+
+fn factory(x: i32) -> Box<dyn Fn(i32) -> i32> {
+    Box::new(move |y| x + y)
 }
