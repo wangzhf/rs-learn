@@ -23,7 +23,9 @@ fn main() {
 
 
     // test_fn::test_fn();
-    test_fn::test_closure();
+    // test_fn::test_closure();
+    // test_fn::test_high_order_fn();
+    test_fn::test_method();
 }
 
 
