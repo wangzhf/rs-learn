@@ -3,6 +3,7 @@ mod test_primary;
 mod test_struct;
 mod test_control_flow;
 mod test_fn;
+mod test_trait;
 
 fn main() {
 
@@ -25,7 +26,9 @@ fn main() {
     // test_fn::test_fn();
     // test_fn::test_closure();
     // test_fn::test_high_order_fn();
-    test_fn::test_method();
+    // test_fn::test_method();
+
+    test_trait::test_trait1();
 }
 
 
