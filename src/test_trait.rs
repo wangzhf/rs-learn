@@ -99,7 +99,7 @@ impl FooBar for Baz {
 
 pub fn test_trait2() {
     let baz = Baz {};
-    /// 两个不同特性具有相同的名称，需要使用通用函数调用方法
+    /// 两个不同特性具有相同的名称，需要使用通用函数调用方法: Trait::method(args); or <Type as Trait>::method(args);
     // baz.bar();
     Foo::bar(&baz);
     FooBar::bar(&baz);
