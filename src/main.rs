@@ -28,7 +28,8 @@ fn main() {
     // test_fn::test_high_order_fn();
     // test_fn::test_method();
 
-    test_trait::test_trait1();
+    // test_trait::test_trait1();
+    test_trait::test_trait2();
 }
 
 
