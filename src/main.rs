@@ -4,6 +4,9 @@ mod test_struct;
 mod test_control_flow;
 mod test_fn;
 mod test_trait;
+mod test_generics;
+mod test_in_out_stream;
+mod test_file_in;
 
 fn main() {
 
@@ -29,7 +32,18 @@ fn main() {
     // test_fn::test_method();
 
     // test_trait::test_trait1();
-    test_trait::test_trait2();
+    // test_trait::test_trait2();
+
+    // test_generics::test_generics1();
+
+    // test_in_out_stream::read_input();
+    // test_in_out_stream::read_input2();
+    // test_in_out_stream::out();
+    // test_in_out_stream::read_and_out();
+
+
+    // test_file_in::read_file();
+    test_file_in::out_file();
 }
 
 
