@@ -7,6 +7,7 @@ mod test_trait;
 mod test_generics;
 mod test_in_out_stream;
 mod test_file_in;
+mod test_loop;
 
 fn main() {
 
@@ -15,6 +16,7 @@ fn main() {
 
     // test_primary::test_primary();
     // test_primary::test_array();
+    test_primary::test_slice();
     // test_primary::test_vec();
 
     // test_struct::test_struct();
@@ -43,7 +45,17 @@ fn main() {
 
 
     // test_file_in::read_file();
-    test_file_in::out_file();
+    // test_file_in::out_file();
+
+    // test_loop::test_for_int();
+    // test_loop::test_for_index();
+    // test_loop::test_line();
+    // test_loop::test_while();
+    // test_loop::test_while_init();
+    // test_loop::test_loop_init();
+    // test_loop::test_break();
+    // test_loop::test_continue();
+    // test_loop::test_label();
 }
 
 

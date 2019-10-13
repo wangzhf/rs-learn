@@ -31,6 +31,22 @@ pub fn test_array() {
     }
 }
 
+pub fn test_slice() {
+    let a: [u8; 3] = [2, 5 ,8];
+    let mut slice_all = &a[..];
+    change(slice_all);
+    println!("the first letter of arr is: {}", slice_all[0]);
+    let mut slice_left = &a[0..2];
+    change(slice_left);
+}
+
+fn change(arr: &[u8]) {
+    for i in arr {
+        print!("{} ", i);
+    }
+    println!("");
+}
+
 pub fn test_vec() {
     // 创建空Vec
     let v: Vec<i32> = Vec::new();
