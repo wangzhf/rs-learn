@@ -8,6 +8,8 @@ mod test_generics;
 mod test_in_out_stream;
 mod test_file_in;
 mod test_loop;
+mod test_string;
+mod test_operator;
 
 fn main() {
 
@@ -16,7 +18,7 @@ fn main() {
 
     // test_primary::test_primary();
     // test_primary::test_array();
-    test_primary::test_slice();
+    // test_primary::test_slice();
     // test_primary::test_vec();
 
     // test_struct::test_struct();
@@ -56,6 +58,13 @@ fn main() {
     // test_loop::test_break();
     // test_loop::test_continue();
     // test_loop::test_label();
+
+
+    // test_string::test_str();
+    // test_string::test_string();
+
+    // test_operator::test_operator_override();
+    test_operator::test_format_macro();
 }
 
 
