@@ -74,7 +74,12 @@ fn main() {
 
     // test_pattern::test_pattern();
     // test_pattern::test_pattern2();
-    test_pattern::test_pattern3();
+    // test_pattern::test_pattern3();
+    // test_pattern::test_pattern4();
+    // test_pattern::test_pattern5();
+    // test_pattern::test_ref();
+    // test_pattern::test_param_bind();
+    test_pattern::test_if();
 }
 
 
