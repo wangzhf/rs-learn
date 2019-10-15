@@ -10,6 +10,8 @@ mod test_file_in;
 mod test_loop;
 mod test_string;
 mod test_operator;
+mod test_match;
+mod test_pattern;
 
 fn main() {
 
@@ -64,7 +66,15 @@ fn main() {
     // test_string::test_string();
 
     // test_operator::test_operator_override();
-    test_operator::test_format_macro();
+    // test_operator::test_format_macro();
+
+
+    // test_match::test_match();
+    // test_match::test_match2();
+
+    // test_pattern::test_pattern();
+    // test_pattern::test_pattern2();
+    test_pattern::test_pattern3();
 }
 
 
