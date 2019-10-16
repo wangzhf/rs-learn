@@ -29,6 +29,15 @@ pub fn test_closure() {
     println!("m is {:?}", m);
     // i32类型实现了Copy trait，因此还可以使用
     println!("step is {}", step);
+
+    // 不使用move
+    let mut x: String = String::from("abc");
+    {
+        // 包体内会对x进行可变借用，而不是剥夺x的所有权，外部添加大括号是为了作用域结束后让可变借用失效
+        let mut some_closure = |c: char| x.push(c);
+        some_closure('d');
+    }
+    println!("x={:?}", x);
 }
 
 

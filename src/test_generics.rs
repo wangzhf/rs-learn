@@ -1,3 +1,4 @@
+use std::ops::Add;
 
 fn make_pair<T, U>(a: T, b: U) -> (T, U) {
     (a, b)
@@ -60,4 +61,68 @@ impl Graph for SimpleGraph {
     fn edges(&self, n: &Node) -> Vec<&Edge> {
         vec![]
     }
+}
+
+
+// 自定义类型
+#[derive(Debug)]
+struct Point2 {
+    x: i32,
+    y: i32,
+}
+
+impl Add for Point2 {
+    type Output = Point2;
+
+    fn add(self, p: Point2) -> Point2 {
+        Point2 {
+            x: self.x + p.x,
+            y: self.y + p.y,
+        }
+    }
+}
+
+fn add<T: Add<T, Output = T>>(a: T, b: T) -> T {
+    a + b
+}
+
+pub fn test_add() {
+    println!("{}", add(100i32, 1i32));
+    println!("{}", add(100.11f32, 100.22f32));
+
+    let p1 = Point2 { x: 1, y: 1};
+    let p2 = Point2 { x: 2, y: 2};
+    println!("{:#?}", add(p1, p2));
+}
+
+// 基于上面Point2的改造，直接限制Point中的类型
+#[derive(Debug)]
+struct Point3<T: Add<T, Output = T>> {
+    x: T,
+    y: T,
+}
+
+impl<T: Add<T, Output = T>> Add for Point3<T> {
+    type Output = Point3<T>;
+
+    fn add(self, p: Point3<T>) -> Point3<T> {
+        Point3 {
+            x: self.x + p.x,
+            y: self.y + p.y,
+        }
+    }
+}
+
+fn add3<T: Add<T, Output = T>>(a: T, b: T) -> T {
+    a + b
+}
+
+pub fn test_add3() {
+    let p1 = Point3 { x: 1.1f32, y: 1.1f32 };
+    let p2 = Point3 { x: 2.1f32, y: 2.1f32 };
+    println!("{:?}", add3(p1, p2));
+
+    let p3 = Point3 { x: 1i32, y: 1i32 };
+    let p4 = Point3 { x: 2i32, y: 2i32 };
+    println!("{:?}", add3(p3, p4));
 }

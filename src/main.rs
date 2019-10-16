@@ -1,3 +1,5 @@
+use crate::test_generics::test_generics1;
+
 mod test_debug_and_display;
 mod test_primary;
 mod test_struct;
@@ -33,7 +35,7 @@ fn main() {
 
 
     // test_fn::test_fn();
-    // test_fn::test_closure();
+    test_fn::test_closure();
     // test_fn::test_high_order_fn();
     // test_fn::test_method();
 
@@ -41,6 +43,8 @@ fn main() {
     // test_trait::test_trait2();
 
     // test_generics::test_generics1();
+    // test_generics::test_add();
+    // test_generics::test_add3();
 
     // test_in_out_stream::read_input();
     // test_in_out_stream::read_input2();
@@ -79,7 +83,7 @@ fn main() {
     // test_pattern::test_pattern5();
     // test_pattern::test_ref();
     // test_pattern::test_param_bind();
-    test_pattern::test_if();
+    // test_pattern::test_if();
 }
 
 
