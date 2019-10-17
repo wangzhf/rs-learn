@@ -14,6 +14,8 @@ mod test_string;
 mod test_operator;
 mod test_match;
 mod test_pattern;
+mod test_borrowing;
+mod test_lifetime;
 
 fn main() {
 
@@ -35,7 +37,7 @@ fn main() {
 
 
     // test_fn::test_fn();
-    test_fn::test_closure();
+    // test_fn::test_closure();
     // test_fn::test_high_order_fn();
     // test_fn::test_method();
 
@@ -84,6 +86,14 @@ fn main() {
     // test_pattern::test_ref();
     // test_pattern::test_param_bind();
     // test_pattern::test_if();
+
+
+    // test_borrowing::test_borrowing();
+    // test_borrowing::test_borrowing2();
+    // test_borrowing::test_borrowing3();
+    // test_borrowing::test_borrowing4();
+
+    test_lifetime::test_lifetime();
 }
 
 
