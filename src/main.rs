@@ -16,6 +16,7 @@ mod test_match;
 mod test_pattern;
 mod test_borrowing;
 mod test_lifetime;
+mod test_closure;
 
 fn main() {
 
@@ -93,7 +94,16 @@ fn main() {
     // test_borrowing::test_borrowing3();
     // test_borrowing::test_borrowing4();
 
-    test_lifetime::test_lifetime();
+    // test_lifetime::test_lifetime();
+
+    // test_closure::test_closure();
+    // test_closure::test_closure2();
+    // test_closure::test_closure3();
+    // test_closure::test_closure4();
+    // test_closure::test_closure5();
+    // test_closure::test_closure_as_parameter();
+    // test_closure::test_fn_point_closure();
+    test_closure::test_closure_as_return_value();
 }
 
 
