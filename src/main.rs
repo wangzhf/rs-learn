@@ -18,6 +18,7 @@ mod test_borrowing;
 mod test_lifetime;
 mod test_closure;
 mod test_vec;
+mod test_hashmap;
 
 fn main() {
 
@@ -109,7 +110,11 @@ fn main() {
     // test_vec::test_vec_init();
     // test_vec::test_vec_access();
     // test_vec::test_vec_iterator();
-    test_vec::test_push_efficiency();
+    // test_vec::test_push_efficiency();
+
+
+    // test_hashmap::test_hashmap();
+    test_hashmap::test_entry();
 }
 
 
