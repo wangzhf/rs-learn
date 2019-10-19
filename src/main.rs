@@ -17,6 +17,7 @@ mod test_pattern;
 mod test_borrowing;
 mod test_lifetime;
 mod test_closure;
+mod test_vec;
 
 fn main() {
 
@@ -103,7 +104,12 @@ fn main() {
     // test_closure::test_closure5();
     // test_closure::test_closure_as_parameter();
     // test_closure::test_fn_point_closure();
-    test_closure::test_closure_as_return_value();
+    // test_closure::test_closure_as_return_value();
+
+    // test_vec::test_vec_init();
+    // test_vec::test_vec_access();
+    // test_vec::test_vec_iterator();
+    test_vec::test_push_efficiency();
 }
 
 
