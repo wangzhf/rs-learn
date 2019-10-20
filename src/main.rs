@@ -18,6 +18,7 @@ mod test_closure;
 mod test_vec;
 mod test_hashmap;
 mod test_iterator;
+mod test_macro;
 
 mod domain;
 
@@ -125,11 +126,15 @@ fn main() {
 
 
     // 测试模块
-    let u = domain::user::User::new("jack".to_string(), 20);
-    println!("name: {}", u.get_name());
+    // let u = domain::user::User::new("jack".to_string(), 20);
+    // println!("name: {}", u.get_name());
 
-    domain::d::f::g::print_g();
-    domain::g::print_g();
+    // domain::d::f::g::print_g();
+    // domain::g::print_g();
+
+
+    // macro
+    test_macro::test_macro();
 }
 
 
