@@ -1,5 +1,3 @@
-use crate::test_generics::test_generics1;
-
 mod test_debug_and_display;
 mod test_primary;
 mod test_struct;
@@ -19,6 +17,9 @@ mod test_lifetime;
 mod test_closure;
 mod test_vec;
 mod test_hashmap;
+mod test_iterator;
+
+mod domain;
 
 fn main() {
 
@@ -114,7 +115,21 @@ fn main() {
 
 
     // test_hashmap::test_hashmap();
-    test_hashmap::test_entry();
+    // test_hashmap::test_entry();
+
+    // test_iterator::test_for();
+    // test_iterator::test_vec();
+    // test_iterator::test_collect();
+    // test_iterator::test_adapter();
+    // test_iterator::test_other();
+
+
+    // 测试模块
+    let u = domain::user::User::new("jack".to_string(), 20);
+    println!("name: {}", u.get_name());
+
+    domain::d::f::g::print_g();
+    domain::g::print_g();
 }
 
 
