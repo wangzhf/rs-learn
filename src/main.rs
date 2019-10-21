@@ -19,6 +19,7 @@ mod test_vec;
 mod test_hashmap;
 mod test_iterator;
 mod test_macro;
+mod test_rc;
 
 mod domain;
 
@@ -134,7 +135,11 @@ fn main() {
 
 
     // macro
-    test_macro::test_macro();
+    // test_macro::test_macro();
+
+
+    // test_rc::test_rc();
+    test_rc::test_weak();
 }
 
 
