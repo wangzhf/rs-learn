@@ -20,6 +20,7 @@ mod test_hashmap;
 mod test_iterator;
 mod test_macro;
 mod test_rc;
+mod test_arc;
 
 mod domain;
 
@@ -139,7 +140,10 @@ fn main() {
 
 
     // test_rc::test_rc();
-    test_rc::test_weak();
+    // test_rc::test_weak();
+
+    // test_arc::test_arc();
+    test_arc::test_demo();
 }
 
 
