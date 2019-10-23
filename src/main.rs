@@ -21,6 +21,7 @@ mod test_iterator;
 mod test_macro;
 mod test_rc;
 mod test_arc;
+mod test_mutex;
 
 mod domain;
 
@@ -143,7 +144,11 @@ fn main() {
     // test_rc::test_weak();
 
     // test_arc::test_arc();
-    test_arc::test_demo();
+    // test_arc::test_demo();
+
+
+    // test_mutex::test_mutex();
+    test_mutex::test_rw_lock();
 }
 
 
