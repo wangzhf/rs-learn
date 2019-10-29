@@ -22,6 +22,7 @@ mod test_macro;
 mod test_rc;
 mod test_arc;
 mod test_mutex;
+mod test_cell;
 
 mod domain;
 
@@ -148,7 +149,12 @@ fn main() {
 
 
     // test_mutex::test_mutex();
-    test_mutex::test_rw_lock();
+    // test_mutex::test_rw_lock();
+
+
+    // test_cell::test_cell();
+    // test_cell::test_ref_cell();
+    test_cell::test_cell2();
 }
 
 
