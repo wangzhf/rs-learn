@@ -23,6 +23,7 @@ mod test_rc;
 mod test_arc;
 mod test_mutex;
 mod test_cell;
+mod test_other_trait;
 
 mod domain;
 
@@ -154,7 +155,11 @@ fn main() {
 
     // test_cell::test_cell();
     // test_cell::test_ref_cell();
-    test_cell::test_cell2();
+    // test_cell::test_cell2();
+
+
+    // test_other_trait::test_from();
+    test_other_trait::test_into();
 }
 
 
