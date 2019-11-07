@@ -24,6 +24,8 @@ mod test_arc;
 mod test_mutex;
 mod test_cell;
 mod test_other_trait;
+mod test_asref;
+mod test_borrow;
 
 mod domain;
 
@@ -159,7 +161,16 @@ fn main() {
 
 
     // test_other_trait::test_from();
-    test_other_trait::test_into();
+    // test_other_trait::test_into();
+
+
+    // test_asref::test_asref();
+    // test_asref::test_asmut();
+
+    // test_borrow::test_borrow();
+    // test_borrow::test_borrow_mut();
+    test_borrow::test_owned();
+
 }
 
 
