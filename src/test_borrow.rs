@@ -34,5 +34,7 @@ pub fn test_owned() {
     println!("{}", ss);
 
     let v: &[i32] = &[1, 2];
-    let vv: Vec<i32> = v.to_owner();
+    let vv: Vec<i32> = v.to_owned();
+    println!("{:?}", v);
+    println!("{:?}", vv);
 }

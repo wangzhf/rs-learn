@@ -26,6 +26,8 @@ mod test_cell;
 mod test_other_trait;
 mod test_asref;
 mod test_borrow;
+mod test_deref;
+mod test_cow;
 
 mod domain;
 
@@ -169,7 +171,13 @@ fn main() {
 
     // test_borrow::test_borrow();
     // test_borrow::test_borrow_mut();
-    test_borrow::test_owned();
+    // test_borrow::test_owned();
+
+    // test_deref::test_deref();
+    // test_deref::test_deref2();
+
+    // test_cow::test_cow();
+    test_cow::test_cow3();
 
 }
 
