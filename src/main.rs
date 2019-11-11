@@ -28,6 +28,7 @@ mod test_asref;
 mod test_borrow;
 mod test_deref;
 mod test_cow;
+mod test_thread;
 
 mod domain;
 
@@ -177,7 +178,13 @@ fn main() {
     // test_deref::test_deref2();
 
     // test_cow::test_cow();
-    test_cow::test_cow3();
+    // test_cow::test_cow3();
+
+    // test_thread::test_thread();
+    // test_thread::test_thread_msg_transmit();
+    // test_thread::test_async_channel();
+
+    test_thread::test_sync_channel();
 
 }
 
