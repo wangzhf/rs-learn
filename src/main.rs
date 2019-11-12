@@ -30,6 +30,8 @@ mod test_deref;
 mod test_cow;
 mod test_thread;
 mod test_share_mem;
+mod test_notify;
+mod test_parallel;
 
 mod domain;
 
@@ -188,7 +190,14 @@ fn main() {
     // test_thread::test_sync_channel();
 
     // test_share_mem::test_static();
-    test_share_mem::test_box();
+    // test_share_mem::test_box();
+
+    // test_notify::test_notify();
+    // test_notify::test_automic();
+    // test_notify::test_mutex();
+    // test_notify::test_mutex_notify();
+
+    test_parallel::test_parallel();
 
 }
 
