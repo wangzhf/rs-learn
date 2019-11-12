@@ -29,6 +29,7 @@ mod test_borrow;
 mod test_deref;
 mod test_cow;
 mod test_thread;
+mod test_share_mem;
 
 mod domain;
 
@@ -184,7 +185,10 @@ fn main() {
     // test_thread::test_thread_msg_transmit();
     // test_thread::test_async_channel();
 
-    test_thread::test_sync_channel();
+    // test_thread::test_sync_channel();
+
+    // test_share_mem::test_static();
+    test_share_mem::test_box();
 
 }
 
