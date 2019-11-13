@@ -32,6 +32,9 @@ mod test_thread;
 mod test_share_mem;
 mod test_notify;
 mod test_parallel;
+mod test_unsafe;
+mod test_any;
+mod data_structure;
 
 mod domain;
 
@@ -197,7 +200,13 @@ fn main() {
     // test_notify::test_mutex();
     // test_notify::test_mutex_notify();
 
-    test_parallel::test_parallel();
+    // test_parallel::test_parallel();
+
+    // test_unsafe::test_unsafe();
+    // test_unsafe::test_rw_static();
+    // test_unsafe::test_invoke_unsafe();
+
+    test_any::test_any();
 
 }
 
