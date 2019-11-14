@@ -35,6 +35,7 @@ mod test_parallel;
 mod test_unsafe;
 mod test_any;
 mod data_structure;
+mod grep;
 
 mod domain;
 
